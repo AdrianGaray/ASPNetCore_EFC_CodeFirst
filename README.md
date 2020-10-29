@@ -47,7 +47,7 @@ Declaramos las propiedades para exponer el modelo
 
 ![](Propiedades_Modelo.png)
 
-Por último sobre escribir el método **OnModelCreating**. El método nos permite mapear nuestras Entidades con la base de datos y le enviamos como parámetro un objeto que instancia de la clase **ModelBuilder**.
+Por último sobre escribir el método **OnModelCreating**. El método, nos permite mapear nuestras Entidades con la base de datos y le enviamos como parámetro un objeto que instancia de la clase **ModelBuilder**.
 
 ![](OnModelCreating.png)
 
@@ -57,7 +57,7 @@ Por último sobre escribir el método **OnModelCreating**. El método nos permit
 ASP.NET Core implementa la **inyección de dependencia** de forma predeterminada. Los
 servicios (como el contexto de la base de datos EF) se registran con la inyección de
 dependencia durante el inicio de la aplicación. Los componentes que requieren estos
-servicios (como los controladores MVC) se proporcionan a través de parámetros de
+servicios (como los controladores MVC) se proporcionan a través, de parámetros de
 constructor.
 
 Se agrega la cadena de conexión de la BD, en el archivo **appsettings.json**
