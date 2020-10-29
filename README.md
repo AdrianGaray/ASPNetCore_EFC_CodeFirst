@@ -33,19 +33,27 @@ Para la clase **Producto** se agrega las siguientes propiedades:
 
 ![](Modelo_DbContexto.png)
 
+<br />
+
 Creamos dos constructores:
 
 * Este constructor está vacío.
 
 ![](Constructor_vacio.png)
 
+<br />
+
 * Y el segundo constructor, espera por parámetro opciones que es un objeto de DbContextOptions.
 
 ![](constructor_DbContextOptions.png)
 
+<br />
+
 Declaramos las propiedades para exponer el modelo
 
 ![](Propiedades_Modelo.png)
+
+<br />
 
 Por último sobre escribir el método **OnModelCreating**. El método, nos permite mapear nuestras Entidades con la base de datos y le enviamos como parámetro un objeto que instancia de la clase **ModelBuilder**.
 
@@ -61,9 +69,12 @@ servicios (como los controladores MVC) se proporcionan a través, de parámetros
 constructor.
 
 Se agrega la cadena de conexión de la BD, en el archivo **appsettings.json**
+
   `"ConnectionStrings": {
     "DefaultConnection": "Data Source=(localdb)\\MyInstance;Initial Catalog=dbproductosCodeFirst"
   },`
+
+<br />
 
 El contexto de la base de datos **DbContexto** se registró como un servicio
 en **Startup.cs**, en el metodo `ConfigureServices()`.
