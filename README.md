@@ -1,8 +1,9 @@
 # ASPNetCore_EFC_CodeFirst
 <br />
 
-## Enfoque Code First
-> Es un enfoque muy popular y **tiene control total sobre el código en lugar de la actividad de la base de datos.**
+
+> ## Enfoque Code First 
+>Es un enfoque muy popular y **tiene control total sobre el código en lugar de la actividad de la base de datos.**
 > En este enfoque, podemos hacer todas las operaciones de la base de datos desde el código, todos los cambios manuales a la base de datos se perderán, todo depende del código.
 
 <br />
@@ -12,6 +13,7 @@
 ![](Entity%20Framework%20Core.jpg)
 
 Y las herramientas de EF Core:
+
 ![](Microsoft.EntityFrameworkCore.Tools.jpg)
 
 <br />
@@ -22,11 +24,13 @@ Sobre la carpeta Models, ir al menú Agregar -> Nuevo Elemento y seleccionamos C
 ![](Clase.png)
 
 Para la clase **Producto** se agrega las siguientes propiedades:
+
 ![](Clase_Producto.png)
 
 <br />
 
 ### Agregar la clase del Contexto de la base de datos llamada **DbContexto**
+
 ![](Modelo_DbContexto.png)
 
 Creamos dos constructores:
@@ -40,9 +44,11 @@ Creamos dos constructores:
 ![](constructor_DbContextOptions.png)
 
 Declaramos las propiedades para exponer el modelo
+
 ![](Propiedades_Modelo.png)
 
 Por último sobre escribir el método **OnModelCreating**. El método nos permite mapear nuestras Entidades con la base de datos y le enviamos como parámetro un objeto que instancia de la clase **ModelBuilder**.
+
 ![](OnModelCreating.png)
 
 <br />
@@ -68,6 +74,7 @@ en **Startup.cs**, en el metodo `ConfigureServices()`.
 
 ## Migraciones para crear la base de datos
 Se va a migrar la estructura de Categoria y Producto, desde la consola **Nuget Package Manager**
+
 ![Nuget Package Manager](Nuget%20Package%20Manager.png)
 
 Agregar la Primera Migración, con el siguiente comando:
