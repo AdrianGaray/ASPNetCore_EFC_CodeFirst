@@ -17,8 +17,6 @@ Sobre la carpeta Models, ir al menú Agregar -> Nuevo Elemento y seleccionamos C
 
 ![](Clase.png)
 
-![](Clase_Categoria.png)
-
 Para la clase **Producto** se agrega las siguientes propiedades:
 ![](Clase_Producto.png)
 
@@ -26,10 +24,13 @@ Para la clase **Producto** se agrega las siguientes propiedades:
 ![](Modelo_DbContexto.png)
 
 Creamos dos constructores:
+
 * Este constructor está vacío.
+
 ![](Constructor_vacio.png)
 
 * Y el segundo constructor, espera por parámetro opciones que es un objeto de DbContextOptions.
+
 ![](constructor_DbContextOptions.png)
 
 Declaramos las propiedades para exponer el modelo
@@ -62,6 +63,7 @@ Se va a migrar la estructura de Categoria y Producto, desde la consola **Nuget P
 Agregar la Primera Migración, con el siguiente comando:
 
 * `Add-Migration primera-migracion`
+
 ![](Add-Migration%20primera-migracion.png)
 
 
