@@ -1,4 +1,3 @@
-Tiene control total sobre el código
 
 
 > ## Enfoque Code First 
