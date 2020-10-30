@@ -146,7 +146,7 @@ Abrimos el Sql Server, y se muestra la base de datos creada y las talas.
 <br />
 
 #### Agregar una columna nueva a la tabla Categoría:
-1.	En la clase Categoría agregamos la siguiente propiedad:
+**1.**	En la clase Categoría agregamos la siguiente propiedad:
 
 <p align="center">
   <img src="codigo.png">
@@ -154,7 +154,7 @@ Abrimos el Sql Server, y se muestra la base de datos creada y las talas.
 
 <br />
 
-2.	En la clase DbContexto, se agrega el campo nuevo, en el método **OnModelCreating**.
+**2.**	En la clase DbContexto, se agrega el campo nuevo, en el método **OnModelCreating**.
 
 <p align="center">
   <img src="entitycodigo.png">
@@ -162,7 +162,7 @@ Abrimos el Sql Server, y se muestra la base de datos creada y las talas.
 
 <br />
 
-3.	Se agrega una nueva migración y en base a esta se va a actualizar la base de datos, ejecutando los siguientes comandos, desde la Administrador de consola:
+**3.**	Se agrega una nueva migración y en base a esta se va a actualizar la base de datos, ejecutando los siguientes comandos, desde la Administrador de consola:
 `Add-Migration tabla-categoria-codigo`
 
 <p align="center">
@@ -171,7 +171,7 @@ Abrimos el Sql Server, y se muestra la base de datos creada y las talas.
 
 <br />
 
-4.	Se crea una nueva migración
+**4.**	Se crea una nueva migración
 
 <p align="center">
   <img src="newmig.png">
@@ -179,7 +179,7 @@ Abrimos el Sql Server, y se muestra la base de datos creada y las talas.
 
 <br />
 
-5.	Se ejecuta el comando: Update-database
+**5.**	Se ejecuta el comando: Update-database
 
 <p align="center">
   <img src="Update.png">
@@ -187,7 +187,7 @@ Abrimos el Sql Server, y se muestra la base de datos creada y las talas.
 
 <br />
 
-6.	Se refresca la base de datos, donde se ve el nuevo campo código
+**6.**	Se refresca la base de datos, donde se ve el nuevo campo código
 
 <p align="center">
   <img src="newcampo.png">
