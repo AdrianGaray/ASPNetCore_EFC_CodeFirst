@@ -88,13 +88,65 @@ Se va a migrar la estructura de Categoria y Producto, desde la consola **Nuget P
 
 ![Nuget Package Manager](Nuget%20Package%20Manager.png)
 
-Agregar la Primera Migración, con el siguiente comando:
+<br />
+
+#### Agregar la Primera Migración, con el siguiente comando:
 
 * `Add-Migration primera-migracion`
 
 ![](Add-Migration%20primera-migracion.png)
 
+<br />
 
+Cuando termina, se genera la carpeta **Migrations**, donde se muestra la primera migración. Donde se encuentra la definición para poder crear la base de datos con las tablas categorías y productos.
+
+![](PrimeraMigracion.png)
+
+<br />
+
+#### Ejecutar la migración con el siguiente comando: 
+* `Update-Database`
+
+![](Update.png)
+
+<br />
+
+Abrimos el Sql Server, y se muestra la base de datos creada y las talas.
+![](tabla.png)
+
+<br />
+
+#### Agregar una columna nueva a la tabla Categoría:
+1.	En la clase Categoría agregamos la siguiente propiedad:
+![](codigo.png)
+
+<br />
+
+2.	En la clase DbContexto, se agrega el campo nuevo, en el método **OnModelCreating**.
+
+![](entitycodigo.png)
+
+<br />
+
+3.	Se agrega una nueva migración y en base a esta se va a actualizar la base de datos, ejecutando los siguientes comandos, desde la Administrador de consola:
+`Add-Migration tabla-categoria-codigo`
+![](mig2.png)
+
+<br />
+
+4.	Se crea una nueva migración
+![](newmig.png)
+
+<br />
+
+5.	Se ejecuta el comando: Update-database
+
+![](Update.png)
+
+<br />
+
+6.	Se refresca la base de datos, donde se ve el nuevo campo código
+![](newcampo.png)
 
 
 
