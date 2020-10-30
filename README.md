@@ -10,15 +10,15 @@
 
 ## Instalar Entity Framework Core, desde el Package NuGet:
 
-![](Entity%20Framework%20Core.jpg)
-
 <p align="center">
   <img src="Entity%20Framework%20Core.jpg">
 </p>
 
 Y las herramientas de EF Core:
 
-![](Microsoft.EntityFrameworkCore.Tools.jpg)
+<p align="center">
+  <img src="Microsoft.EntityFrameworkCore.Tools.jpg">
+</p>
 
 <br />
 
