@@ -112,6 +112,7 @@ Cuando termina, se genera la carpeta **Migrations**, donde se muestra la primera
 <br />
 
 Abrimos el Sql Server, y se muestra la base de datos creada y las talas.
+
 ![](tabla.png)
 
 <br />
