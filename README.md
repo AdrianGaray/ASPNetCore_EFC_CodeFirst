@@ -25,17 +25,23 @@ Y las herramientas de EF Core:
 ## Creando el Modelo de Datos
 Sobre la carpeta Models, ir al menú Agregar -> Nuevo Elemento y seleccionamos Clase, con el nombre: Categoría. Se agrega las siguientes propiedades.
 
-![](Clase.png)
+<p align="center">
+  <img src="Clase.png">
+</p>
 
 Para la clase **Producto** se agrega las siguientes propiedades:
 
-![](Clase_Producto.png)
+<p align="center">
+  <img src="Clase_Producto.png">
+</p>
 
 <br />
 
 ### Agregar la clase del Contexto de la base de datos llamada **DbContexto**
 
-![](Modelo_DbContexto.png)
+<p align="center">
+  <img src="Modelo_DbContexto.png">
+</p>
 
 <br />
 
@@ -43,25 +49,33 @@ Creamos dos constructores:
 
 * Este constructor está vacío.
 
-![](Constructor_vacio.png)
+<p align="center">
+  <img src="Constructor_vacio.png">
+</p>
 
 <br />
 
 * Y el segundo constructor, espera por parámetro opciones que es un objeto de DbContextOptions.
 
-![](constructor_DbContextOptions.png)
+<p align="center">
+  <img src="constructor_DbContextOptions.png">
+</p>
 
 <br />
 
 Declaramos las propiedades para exponer el modelo
 
-![](Propiedades_Modelo.png)
+<p align="center">
+  <img src="Propiedades_Modelo.png">
+</p>
 
 <br />
 
 Por último sobre escribir el método **OnModelCreating**. El método, nos permite mapear nuestras Entidades con la base de datos y le enviamos como parámetro un objeto que instancia de la clase **ModelBuilder**.
 
-![](OnModelCreating.png)
+<p align="center">
+  <img src="OnModelCreating.png">
+</p>
 
 <br />
 
@@ -90,7 +104,9 @@ en **Startup.cs**, en el metodo `ConfigureServices()`.
 ## Migraciones para crear la base de datos
 Se va a migrar la estructura de Categoria y Producto, desde la consola **Nuget Package Manager**
 
-![Nuget Package Manager](Nuget%20Package%20Manager.png)
+<p align="center">
+  <img src="Nuget%20Package%20Manager.png">
+</p>
 
 <br />
 
@@ -98,63 +114,84 @@ Se va a migrar la estructura de Categoria y Producto, desde la consola **Nuget P
 
 * `Add-Migration primera-migracion`
 
-![](Add-Migration%20primera-migracion.png)
+<p align="center">
+  <img src="Add-Migration%20primera-migracion.png">
+</p>
 
 <br />
 
 Cuando termina, se genera la carpeta **Migrations**, donde se muestra la primera migración. Donde se encuentra la definición para poder crear la base de datos con las tablas categorías y productos.
 
-![](PrimeraMigracion.png)
+<p align="center">
+  <img src="PrimeraMigracion.png">
+</p>
 
 <br />
 
 #### Ejecutar la migración con el siguiente comando: 
 * `Update-Database`
 
-![](Update.png)
+<p align="center">
+  <img src="Update.png">
+</p>
 
 <br />
 
 Abrimos el Sql Server, y se muestra la base de datos creada y las talas.
 
-![](tabla.png)
+<p align="center">
+  <img src="tabla.png">
+</p>
 
 <br />
 
 #### Agregar una columna nueva a la tabla Categoría:
 1.	En la clase Categoría agregamos la siguiente propiedad:
 
-![](codigo.png)
+<p align="center">
+  <img src="codigo.png">
+</p>
 
 <br />
 
 2.	En la clase DbContexto, se agrega el campo nuevo, en el método **OnModelCreating**.
 
-![](entitycodigo.png)
+<p align="center">
+  <img src="entitycodigo.png">
+</p>
 
 <br />
 
 3.	Se agrega una nueva migración y en base a esta se va a actualizar la base de datos, ejecutando los siguientes comandos, desde la Administrador de consola:
 `Add-Migration tabla-categoria-codigo`
-![](mig2.png)
+
+<p align="center">
+  <img src="mig2.png">
+</p>
 
 <br />
 
 4.	Se crea una nueva migración
 
-![](newmig.png)
+<p align="center">
+  <img src="newmig.png">
+</p>
 
 <br />
 
 5.	Se ejecuta el comando: Update-database
 
-![](Update.png)
+<p align="center">
+  <img src="Update.png">
+</p>
 
 <br />
 
 6.	Se refresca la base de datos, donde se ve el nuevo campo código
 
-![](newcampo.png)
+<p align="center">
+  <img src="newcampo.png">
+</p>
 
 
 
