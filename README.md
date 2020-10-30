@@ -118,6 +118,7 @@ Abrimos el Sql Server, y se muestra la base de datos creada y las talas.
 
 #### Agregar una columna nueva a la tabla Categoría:
 1.	En la clase Categoría agregamos la siguiente propiedad:
+
 ![](codigo.png)
 
 <br />
@@ -135,6 +136,7 @@ Abrimos el Sql Server, y se muestra la base de datos creada y las talas.
 <br />
 
 4.	Se crea una nueva migración
+
 ![](newmig.png)
 
 <br />
@@ -146,6 +148,7 @@ Abrimos el Sql Server, y se muestra la base de datos creada y las talas.
 <br />
 
 6.	Se refresca la base de datos, donde se ve el nuevo campo código
+
 ![](newcampo.png)
 
 
