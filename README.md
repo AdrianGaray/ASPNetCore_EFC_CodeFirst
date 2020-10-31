@@ -1,5 +1,3 @@
-# ASPNetCore_EFC_CodeFirst
-Tiene control total sobre el código
 
 
 > ## Enfoque Code First 
